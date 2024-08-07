@@ -298,7 +298,7 @@ static uint64_t rc522_sn_to_u64(uint8_t* sn)
         return 0;
     }
 
-    for(int i = 4; i >= 0; i--) {
+    for(int i = 3; i >= 0; i--) {
         result |= ((uint64_t) sn[i] << (i * 8));
     }
 
